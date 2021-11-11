@@ -1,0 +1,29 @@
+.logoHomePage{
+text-align: center;
+font-style: italic;
+color :rgb(71, 180, 216);
+margin: 15px;
+
+border-bottom: lightblue;
+}
+.card-container{
+/* display: flex; */
+overflow-y: scroll;
+border: 1px solid black;
+height: wrap;
+display: grid;
+/* gap : 20px; */
+/* this line is very inportant */
+grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+/* grid-template-columns: repeat(auto-fill,minmax(400px,1fr)); */
+/* justify-content: center; */
+/* align-items: center; */
+grid-template-rows: 1fr;
+margin: 10px;
+
+}
+.card-container >* {
+    height: 1fr;
+    margin: 5px;
+    width: 1fr;
+}
