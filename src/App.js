@@ -4,8 +4,7 @@ import './App.css';
 import CardDetails from './components/CardDetails/CardDetails';
 import CardList from './components/CardList/CardList';
 import NotFound from './components/NotFound/NotFound'
-import Comment from './components/Comment/Comment';
-import Avatars from './components/Avatars/Avatars';
+
 // import CommentAll from './components/CommentAll/CommentAll'
 
 function App() {

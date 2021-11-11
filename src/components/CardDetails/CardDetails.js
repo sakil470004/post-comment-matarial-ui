@@ -9,7 +9,6 @@ import CardContent from '@mui/material/CardContent';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import CommentAll from '../CommentAll/CommentAll'
-import Comment from '../Comment/Comment'
 
 const CardDetails = (props) => {
     const [singlePost, setSinglePost] = useState({})
@@ -38,7 +37,7 @@ const CardDetails = (props) => {
 
     }, [postId])
 
-    const { userId, id, title, body } = singlePost
+    const {  title, body } = singlePost
     return (
         <div className='card-detail-comment-wraper'>
             <Card variant="outlined" //sx={{ maxWidth: 345 }}

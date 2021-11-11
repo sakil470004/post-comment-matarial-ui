@@ -1,5 +1,5 @@
 import { React, useEffect, useState } from 'react'
-import { useHistory, useParams } from 'react-router'
+import { useParams } from 'react-router'
 import Comment from '../Comment/Comment'
 
 import './CommentAll.css'
@@ -12,7 +12,7 @@ const CommentAll = () => {
 
     // const comments = props.comments
     const [comments, setComments] = useState([])
-    const [commentsOn, setCommentsOn] = useState(false)
+  
     const { postId } = useParams()
 
 

@@ -1,7 +1,7 @@
 // import * as React from 'react';
 import React from 'react';
 import Card from '@mui/material/Card';
-import { useHistory,useParams } from "react-router-dom";
+import { useHistory} from "react-router-dom";
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
 // import CardMedia from '@mui/material/CardMedia';
@@ -9,7 +9,7 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 
 const MediaCard = (props) => {
-  const { userId, id, title, body } = props.singlePost;
+  const {  id, title} = props.singlePost;
   // console.log(props.singlePost)
   // const name = props.singlePost.name;
   
@@ -20,9 +20,6 @@ const MediaCard = (props) => {
   }
 
 
-  function handleClick() {
-    history.push("/home");
-  }
   return (
     <div className='card-wrapper'>
       <Card variant="outlined" //sx={{ maxWidth: 345 }}
